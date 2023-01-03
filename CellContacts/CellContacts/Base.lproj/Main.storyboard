@@ -17,26 +17,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vkN-xh-RLF">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="ShM-WS-YkT"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="GU2-eK-WtB"/>
                                 </connections>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jj7-q1-szS">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zCn-rA-9Bi"/>
+                                    <barButtonItem title="Создать контакт" id="7ll-uO-8tW">
+                                        <connections>
+                                            <action selector="showNewContactAlert" destination="BYZ-38-t0r" id="IRj-np-660"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vkN-xh-RLF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Akx-7d-MiQ"/>
+                            <constraint firstItem="Jj7-q1-szS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xyy-mj-8MV"/>
+                            <constraint firstItem="Jj7-q1-szS" firstAttribute="top" secondItem="vkN-xh-RLF" secondAttribute="bottom" id="ZfK-OW-FOQ"/>
+                            <constraint firstItem="Jj7-q1-szS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zta-Sk-Feq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jj7-q1-szS" secondAttribute="bottom" id="dPI-y3-Y22"/>
                             <constraint firstItem="vkN-xh-RLF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nPk-dH-fUk"/>
-                            <constraint firstItem="vkN-xh-RLF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uKr-W4-39o"/>
                             <constraint firstItem="vkN-xh-RLF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wf5-9c-X1z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="vkN-xh-RLF" id="FD6-Uy-G9K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="4"/>
+            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
