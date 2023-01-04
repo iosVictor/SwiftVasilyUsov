@@ -58,14 +58,15 @@
 		EDCF1439295F24F100EB21C4 /* CellContacts */ = {
 			isa = PBXGroup;
 			children = (
-				EDCF144E2962EB5F00EB21C4 /* Model */,
-				EDCF143A295F24F100EB21C4 /* AppDelegate.swift */,
-				EDCF143C295F24F100EB21C4 /* SceneDelegate.swift */,
-				EDCF143E295F24F100EB21C4 /* ViewController.swift */,
-				EDCF1440295F24F100EB21C4 /* Main.storyboard */,
-				EDCF1443295F24F300EB21C4 /* Assets.xcassets */,
-				EDCF1445295F24F300EB21C4 /* LaunchScreen.storyboard */,
+				EDCF14512966059B00EB21C4 /* Root */,
 				EDCF1448295F24F300EB21C4 /* Info.plist */,
+				EDCF1452296605DE00EB21C4 /* View */,
+				EDCF144E2962EB5F00EB21C4 /* Model */,
+				EDCF1453296606B300EB21C4 /* Storage */,
+				EDCF1454296606CE00EB21C4 /* Network */,
+				EDCF1455296606FB00EB21C4 /* Controller */,
+				EDCF14562966072500EB21C4 /* Helpers */,
+				EDCF14572966076200EB21C4 /* Resources */,
 			);
 			path = CellContacts;
 			sourceTree = "<group>";
@@ -76,6 +77,61 @@
 				EDCF144F2962EB9E00EB21C4 /* Contact.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EDCF14512966059B00EB21C4 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				EDCF143A295F24F100EB21C4 /* AppDelegate.swift */,
+				EDCF143C295F24F100EB21C4 /* SceneDelegate.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		EDCF1452296605DE00EB21C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDCF1440295F24F100EB21C4 /* Main.storyboard */,
+				EDCF1445295F24F300EB21C4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDCF1453296606B300EB21C4 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		EDCF1454296606CE00EB21C4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EDCF1455296606FB00EB21C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDCF143E295F24F100EB21C4 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EDCF14562966072500EB21C4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EDCF14572966076200EB21C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDCF1443295F24F300EB21C4 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +363,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +395,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
