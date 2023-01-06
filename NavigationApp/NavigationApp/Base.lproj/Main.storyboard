@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="678.62595419847321" y="-47.183098591549296"/>
         </scene>
-        <!--View Controller-->
+        <!--Красная сцена-->
         <scene sceneID="Khs-X4-brt">
             <objects>
                 <viewController storyboardIdentifier="redViewController" id="bIx-qj-DOs" customClass="ViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,13 +57,15 @@
                         <viewLayoutGuide key="safeArea" id="S0X-8O-A5z"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uuf-rW-IVc"/>
+                    <navigationItem key="navigationItem" title="Красная сцена" prompt="Дополнительная информация" id="uuf-rW-IVc">
+                        <barButtonItem key="backBarButtonItem" title="К красной сцене" id="xLo-iw-gqK"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPS-5g-JaL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1602" y="-47"/>
         </scene>
-        <!--View Controller-->
+        <!--Зеленая сцена-->
         <scene sceneID="o21-zB-PHP">
             <objects>
                 <viewController storyboardIdentifier="greenViewController" id="lI6-HU-M3U" customClass="ViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -93,13 +95,15 @@
                         <viewLayoutGuide key="safeArea" id="k7D-3h-vNM"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OpL-5W-qX7"/>
+                    <navigationItem key="navigationItem" title="Зеленая сцена" prompt="Дополнительная информация" id="OpL-5W-qX7">
+                        <barButtonItem key="backBarButtonItem" title="К зеленой сцене" id="Bdk-Ph-W54"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CA3-lV-1fO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2486" y="-47"/>
         </scene>
-        <!--View Controller-->
+        <!--Желтая сцена-->
         <scene sceneID="exF-FG-WUa">
             <objects>
                 <viewController storyboardIdentifier="yellowViewController" id="OJi-7x-Ugc" customClass="ViewController" customModule="NavigationApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -138,7 +142,9 @@
                         <viewLayoutGuide key="safeArea" id="ln9-5F-gwJ"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sz9-2w-0Hc"/>
+                    <navigationItem key="navigationItem" title="Желтая сцена" prompt="Дополнительная информация" id="sz9-2w-0Hc">
+                        <barButtonItem key="backBarButtonItem" title="К желтой сцене" id="NLc-7Y-tWe"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vR3-eR-0Sv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
