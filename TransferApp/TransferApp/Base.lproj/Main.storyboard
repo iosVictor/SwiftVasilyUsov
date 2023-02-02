@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uOd-EV-Ivw">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Сцена А-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="TransferApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Six-ZK-sYr">
+                                <rect key="frame" x="161" y="408" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUE-c6-Txa">
+                                <rect key="frame" x="30" y="474" width="333" height="36"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Изменить с помощью свойства"/>
+                                <connections>
+                                    <action selector="editDataWithProperty:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12V-qR-Pox"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntr-je-IIr">
+                                <rect key="frame" x="30" y="540" width="333" height="36"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Изменить с помощью segue"/>
+                                <connections>
+                                    <segue destination="oNC-xR-kdU" kind="show" identifier="toEditScreen" id="xd4-Xd-GZy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ant-17-8eJ">
+                                <rect key="frame" x="30" y="606" width="333" height="36"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Изменить с помощью делегата"/>
+                                <connections>
+                                    <action selector="editDataWithDelegate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L61-70-LgU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o39-vQ-m9Q">
+                                <rect key="frame" x="30" y="672" width="333" height="36"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Изменить с помощью замыкания"/>
+                                <connections>
+                                    <action selector="editDataWithClosure:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H2M-xL-gZG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bUE-c6-Txa" secondAttribute="trailing" constant="30" id="076-lK-wlc"/>
+                            <constraint firstItem="Six-ZK-sYr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="756-Di-sto"/>
+                            <constraint firstItem="o39-vQ-m9Q" firstAttribute="top" secondItem="Ant-17-8eJ" secondAttribute="bottom" constant="30" id="AFV-9U-Eo7"/>
+                            <constraint firstItem="o39-vQ-m9Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="JdF-bb-1f2"/>
+                            <constraint firstItem="Ant-17-8eJ" firstAttribute="top" secondItem="Ntr-je-IIr" secondAttribute="bottom" constant="30" id="JvX-JO-7NE"/>
+                            <constraint firstItem="Six-ZK-sYr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TCx-az-PM6"/>
+                            <constraint firstItem="bUE-c6-Txa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="VeD-fR-QlX"/>
+                            <constraint firstItem="Ant-17-8eJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bk5-OG-T6z"/>
+                            <constraint firstItem="bUE-c6-Txa" firstAttribute="top" secondItem="Six-ZK-sYr" secondAttribute="bottom" constant="30" id="f43-jG-NqM"/>
+                            <constraint firstItem="Ntr-je-IIr" firstAttribute="top" secondItem="bUE-c6-Txa" secondAttribute="bottom" constant="30" id="hc8-Ln-v1h"/>
+                            <constraint firstItem="Ntr-je-IIr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="iTb-ce-GTc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o39-vQ-m9Q" secondAttribute="trailing" constant="30" id="nlT-Cv-qG9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ntr-je-IIr" secondAttribute="trailing" constant="30" id="w4n-Q2-216"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ant-17-8eJ" secondAttribute="trailing" constant="30" id="yQt-ch-8tf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Сцена А" largeTitleDisplayMode="always" id="aWg-aF-LDw"/>
+                    <connections>
+                        <outlet property="dataLabel" destination="Six-ZK-sYr" id="3I1-Rl-s4f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.5114503816794" y="3.5211267605633805"/>
+        </scene>
+        <!--Сцена Б-->
+        <scene sceneID="Xfi-t1-cwx">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="oNC-xR-kdU" customClass="SecondViewController" customModule="TransferApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Cs-uj-fvG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQo-BJ-aqn">
+                                <rect key="frame" x="30" y="409" width="333" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2V-kQ-HYO">
+                                <rect key="frame" x="30" y="473" width="333" height="36"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Сохранить с помощью свойства"/>
+                                <connections>
+                                    <action selector="saveDataWithProperty:" destination="oNC-xR-kdU" eventType="touchUpInside" id="MW3-zV-BIZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbP-dE-Ek1">
+                                <rect key="frame" x="30" y="539" width="333" height="36"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Сохранить с помощью unwind"/>
+                                <connections>
+                                    <segue destination="xui-hl-l54" kind="unwind" identifier="toFirstScreen" unwindAction="unwindToFirstScreen:" id="aM8-mn-eKB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpF-gW-QXx">
+                                <rect key="frame" x="30" y="605" width="333" height="36"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Сохранить с помощью делегата"/>
+                                <connections>
+                                    <action selector="saveDataWithDelegate:" destination="oNC-xR-kdU" eventType="touchUpInside" id="gOP-NC-2ab"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxC-Pi-goN">
+                                <rect key="frame" x="30" y="671" width="333" height="36"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Сохранить с помощью замыкания"/>
+                                <connections>
+                                    <action selector="saveDataWithClosure:" destination="oNC-xR-kdU" eventType="touchUpInside" id="fVa-f5-bpb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="74G-Zl-kof"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="WQo-BJ-aqn" firstAttribute="centerY" secondItem="5Cs-uj-fvG" secondAttribute="centerY" id="2jX-70-Iut"/>
+                            <constraint firstItem="74G-Zl-kof" firstAttribute="trailing" secondItem="K2V-kQ-HYO" secondAttribute="trailing" constant="30" id="6C7-B0-qmN"/>
+                            <constraint firstItem="WQo-BJ-aqn" firstAttribute="centerX" secondItem="5Cs-uj-fvG" secondAttribute="centerX" id="9YM-Fg-jY4"/>
+                            <constraint firstItem="OxC-Pi-goN" firstAttribute="top" secondItem="rpF-gW-QXx" secondAttribute="bottom" constant="30" id="BIu-Ip-HBB"/>
+                            <constraint firstItem="74G-Zl-kof" firstAttribute="trailing" secondItem="OxC-Pi-goN" secondAttribute="trailing" constant="30" id="N5u-bf-uiI"/>
+                            <constraint firstItem="rpF-gW-QXx" firstAttribute="top" secondItem="nbP-dE-Ek1" secondAttribute="bottom" constant="30" id="OgD-E0-CIF"/>
+                            <constraint firstItem="74G-Zl-kof" firstAttribute="trailing" secondItem="rpF-gW-QXx" secondAttribute="trailing" constant="30" id="Vz4-nS-kD5"/>
+                            <constraint firstItem="74G-Zl-kof" firstAttribute="trailing" secondItem="WQo-BJ-aqn" secondAttribute="trailing" constant="30" id="Zrp-Ka-C0w"/>
+                            <constraint firstItem="K2V-kQ-HYO" firstAttribute="top" secondItem="WQo-BJ-aqn" secondAttribute="bottom" constant="30" id="dg9-B3-cwW"/>
+                            <constraint firstItem="OxC-Pi-goN" firstAttribute="leading" secondItem="74G-Zl-kof" secondAttribute="leading" constant="30" id="fRH-w6-di3"/>
+                            <constraint firstItem="74G-Zl-kof" firstAttribute="trailing" secondItem="nbP-dE-Ek1" secondAttribute="trailing" constant="30" id="gAk-B8-99F"/>
+                            <constraint firstItem="nbP-dE-Ek1" firstAttribute="top" secondItem="K2V-kQ-HYO" secondAttribute="bottom" constant="30" id="gTN-1q-HJ1"/>
+                            <constraint firstItem="WQo-BJ-aqn" firstAttribute="leading" secondItem="74G-Zl-kof" secondAttribute="leading" constant="30" id="hUl-AF-WwA"/>
+                            <constraint firstItem="K2V-kQ-HYO" firstAttribute="leading" secondItem="74G-Zl-kof" secondAttribute="leading" constant="30" id="mry-6K-6or"/>
+                            <constraint firstItem="rpF-gW-QXx" firstAttribute="leading" secondItem="74G-Zl-kof" secondAttribute="leading" constant="30" id="tcA-5L-sen"/>
+                            <constraint firstItem="nbP-dE-Ek1" firstAttribute="leading" secondItem="74G-Zl-kof" secondAttribute="leading" constant="30" id="zNW-Mv-Mk3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Сцена Б" largeTitleDisplayMode="always" id="Jka-Hy-j6a"/>
+                    <connections>
+                        <outlet property="dataTextField" destination="WQo-BJ-aqn" id="baK-IK-V3H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7QK-wK-5Ek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="xui-hl-l54" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1953" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aII-KH-C6n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uOd-EV-Ivw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Wj6-cu-hkj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WAV-ew-FLD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uim-pV-ylt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
