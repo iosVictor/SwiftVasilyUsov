@@ -16,6 +16,10 @@
 		EDCF154E2991958500EB21C4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF154D2991958500EB21C4 /* Task.swift */; };
 		EDCF15502991981200EB21C4 /* TasksStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF154F2991981200EB21C4 /* TasksStorage.swift */; };
 		EDCF1554299CC07800EB21C4 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF1553299CC07800EB21C4 /* TaskCell.swift */; };
+		EDCF1556299E960300EB21C4 /* TaskEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF1555299E960300EB21C4 /* TaskEditController.swift */; };
+		EDCF155829A3C55100EB21C4 /* TaskTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF155729A3C55100EB21C4 /* TaskTypeController.swift */; };
+		EDCF155B29A40ADD00EB21C4 /* TaskTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCF155929A40ADD00EB21C4 /* TaskTypeCell.swift */; };
+		EDCF155C29A40ADD00EB21C4 /* TaskTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCF155A29A40ADD00EB21C4 /* TaskTypeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		EDCF154D2991958500EB21C4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		EDCF154F2991981200EB21C4 /* TasksStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksStorage.swift; sourceTree = "<group>"; };
 		EDCF1553299CC07800EB21C4 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		EDCF1555299E960300EB21C4 /* TaskEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditController.swift; sourceTree = "<group>"; };
+		EDCF155729A3C55100EB21C4 /* TaskTypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeController.swift; sourceTree = "<group>"; };
+		EDCF155929A40ADD00EB21C4 /* TaskTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeCell.swift; sourceTree = "<group>"; };
+		EDCF155A29A40ADD00EB21C4 /* TaskTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,8 @@
 				EDCF153629918F1700EB21C4 /* AppDelegate.swift */,
 				EDCF153829918F1700EB21C4 /* SceneDelegate.swift */,
 				EDCF154A299192CC00EB21C4 /* TaskListController.swift */,
+				EDCF1555299E960300EB21C4 /* TaskEditController.swift */,
+				EDCF155729A3C55100EB21C4 /* TaskTypeController.swift */,
 				EDCF153C29918F1700EB21C4 /* Main.storyboard */,
 				EDCF153F29918F1800EB21C4 /* Assets.xcassets */,
 				EDCF154129918F1800EB21C4 /* LaunchScreen.storyboard */,
@@ -96,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				EDCF1553299CC07800EB21C4 /* TaskCell.swift */,
+				EDCF155929A40ADD00EB21C4 /* TaskTypeCell.swift */,
+				EDCF155A29A40ADD00EB21C4 /* TaskTypeCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -160,6 +172,7 @@
 			files = (
 				EDCF154329918F1800EB21C4 /* LaunchScreen.storyboard in Resources */,
 				EDCF154029918F1800EB21C4 /* Assets.xcassets in Resources */,
+				EDCF155C29A40ADD00EB21C4 /* TaskTypeCell.xib in Resources */,
 				EDCF153E29918F1700EB21C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,8 +188,11 @@
 				EDCF153729918F1700EB21C4 /* AppDelegate.swift in Sources */,
 				EDCF15502991981200EB21C4 /* TasksStorage.swift in Sources */,
 				EDCF153929918F1700EB21C4 /* SceneDelegate.swift in Sources */,
+				EDCF155829A3C55100EB21C4 /* TaskTypeController.swift in Sources */,
 				EDCF1554299CC07800EB21C4 /* TaskCell.swift in Sources */,
 				EDCF154B299192CD00EB21C4 /* TaskListController.swift in Sources */,
+				EDCF1556299E960300EB21C4 /* TaskEditController.swift in Sources */,
+				EDCF155B29A40ADD00EB21C4 /* TaskTypeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
