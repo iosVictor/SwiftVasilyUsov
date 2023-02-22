@@ -99,7 +99,7 @@
                     <navigationItem key="navigationItem" id="d46-Ju-okD">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HVw-de-rNo">
                             <connections>
-                                <segue destination="PuN-pJ-Psr" kind="show" id="5en-x8-bEF"/>
+                                <segue destination="PuN-pJ-Psr" kind="show" identifier="toCreateScreen" id="5en-x8-bEF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -111,7 +111,7 @@
         <!--Task Edit Controller-->
         <scene sceneID="9Ji-rx-513">
             <objects>
-                <tableViewController id="PuN-pJ-Psr" customClass="TaskEditController" customModule="To_Do_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TaskEditController" id="PuN-pJ-Psr" customClass="TaskEditController" customModule="To_Do_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="48u-OY-Tax">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,7 +210,13 @@
                             <outlet property="delegate" destination="PuN-pJ-Psr" id="6fi-CX-DG3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="k9r-bE-R5L"/>
+                    <navigationItem key="navigationItem" id="k9r-bE-R5L">
+                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="XBD-05-OwP">
+                            <connections>
+                                <action selector="saveTask:" destination="PuN-pJ-Psr" id="ODK-Yh-IYw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="taskStatusSwitch" destination="7w9-fF-uxS" id="SxM-VZ-kl1"/>
                         <outlet property="taskTitle" destination="yNd-ve-1RQ" id="922-5q-Zcc"/>
