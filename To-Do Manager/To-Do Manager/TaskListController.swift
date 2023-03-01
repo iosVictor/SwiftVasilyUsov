@@ -10,7 +10,7 @@ import UIKit
 class TaskListController: UITableViewController {
     
     // хранилище задач
-    var tasksStorage: TasksStorageProtocol = TaskStorage()
+    var tasksStorage: TasksStorageProtocol = TasksStorage()
     // коллекция задач
     var tasks: [TaskPriority:[TaskProtocol]] = [:] {
         didSet {
@@ -21,6 +21,12 @@ class TaskListController: UITableViewController {
                     return task1position < task2position
                 }
             }
+            // сохранение задач
+            var savingArray: [TaskProtocol] = []
+            tasks.forEach { _, value in
+                savingArray += value
+            }
+            tasksStorage.saveTasks(savingArray)
         }
     }
     
@@ -33,8 +39,7 @@ class TaskListController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // загрузка задач
-        loadTasks()
+
         // кнопка активации режима редактирования
         navigationItem.leftBarButtonItem = editButtonItem
     }
@@ -47,6 +52,19 @@ class TaskListController: UITableViewController {
         }
         // загрузка и разбор задач из хранилища
         tasksStorage.loadTasks().forEach { task in
+            tasks[task.type]?.append(task)
+        }
+    }
+    
+    // получение списка задач, их разбор и установка в свойство tasks
+    func setTasks(_ tasksCollection: [TaskProtocol]) {
+        // подготовка коллекции с задачами
+        // будем использовать только те задачи, для которых определена секция
+        sectionsTypesPosition.forEach { taskType in
+            tasks[taskType] = []
+        }
+        // загрузка и разбор задач из хранилища
+        tasksCollection.forEach { task in
             tasks[task.type]?.append(task)
         }
     }
